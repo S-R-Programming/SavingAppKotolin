@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "808761847782",
+    "project_id": "savingappkotolin",
+    "storage_bucket": "savingappkotolin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808761847782:android:b655c78fca484e5ac83027",
+        "android_client_info": {
+          "package_name": "com.websarva.wings.android.savingappkotolin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808761847782-hejrthlk44v4mgo63jpdf3q4g2f6bfrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFIJdPs1hB15qqMfNkw6m0uI0jdxwaQQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808761847782-hejrthlk44v4mgo63jpdf3q4g2f6bfrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
