@@ -47,7 +47,11 @@ class CreateAccountActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
+                    Toast.makeText(baseContext, "Authentication success.",
+                        Toast.LENGTH_SHORT).show()
+                        //sendMailの実装もしたい
                     updateUI(user)
+                    //履歴画面へ
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "createUserWithEmail:failure", task.exception)
