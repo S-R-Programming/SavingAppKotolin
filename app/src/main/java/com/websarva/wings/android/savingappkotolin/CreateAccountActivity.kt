@@ -3,6 +3,8 @@ package com.websarva.wings.android.savingappkotolin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -13,6 +15,7 @@ class CreateAccountActivity : AppCompatActivity() {
     // [START declare_auth]
     private lateinit var auth: FirebaseAuth
     // [END declare_auth]
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,4 +100,11 @@ class CreateAccountActivity : AppCompatActivity() {
     companion object {
         private const val TAG = "EmailPassword"
     }
+
+    fun clickCreateButton(view:View){
+        val email = findViewById<EditText>(R.id.email)
+        val password = findViewById<EditText>(R.id.password)
+        createAccount(email.text.toString(), password.text.toString())
+    }
+
 }
