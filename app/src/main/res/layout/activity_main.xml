@@ -37,7 +37,7 @@
         android:layout_marginEnd="112dp"
         android:layout_marginRight="112dp"
         android:text="お金節約履歴"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="@font/pop"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
