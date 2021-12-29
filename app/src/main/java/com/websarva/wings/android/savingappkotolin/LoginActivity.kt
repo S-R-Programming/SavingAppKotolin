@@ -1,5 +1,6 @@
 package com.websarva.wings.android.savingappkotolin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -37,19 +38,24 @@ class LoginActivity : AppCompatActivity() {
 
     private fun signIn(email: String, password: String) {
         // [START sign_in_with_email]
-        auth.signInWithEmailAndPassword(email, password)
+        var email_full = email+"@gmail.com"
+        auth.signInWithEmailAndPassword(email_full, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithEmail:success")
                     val user = auth.currentUser
-                    Toast.makeText(baseContext, "Authentication success.",
+                    Toast.makeText(baseContext, "ログインしました",
                         Toast.LENGTH_SHORT).show()
+                    //履歴画面へ
+                    intent = Intent(this@LoginActivity,ResumeActivity::class.java)
+                    intent.putExtra("email",email)
+                    startActivity(intent)
                     updateUI(user)
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Authentication failed.",
+                    Toast.makeText(baseContext, "ログイン失敗",
                         Toast.LENGTH_SHORT).show()
                     updateUI(null)
                 }
