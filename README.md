@@ -25,8 +25,8 @@ Android Studio (Kotlin)
 このようにリストで記録されます。このリストを押すと、Tweetの画面へ移り、我慢した内容をTweet出来ます。<br><br>
 <img src = "https://user-images.githubusercontent.com/89324742/140570642-f76bbe5d-0281-41c6-be3b-6c4bc54a499c.png"
      width="400px"><br><br>
-     先ほどの履歴の画面で「目安」ボタンを押すと、おおよその価格が表示されます。<br><br>
- <img src="https://user-images.githubusercontent.com/89324742/140571111-7bd2652f-33eb-4120-b089-da48eec46b3d.png"
+     先ほどの履歴の画面で年・月の入力し「検索」ボタンを押すと、過去の履歴が確認出来ます。<br><br>
+ <img src="https://user-images.githubusercontent.com/89324742/147649785-53ec3d19-551b-4685-8956-adb08c4600f1.png"
       width="400px">
 
 ## 工夫点
