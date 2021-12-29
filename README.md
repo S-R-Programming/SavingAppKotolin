@@ -15,7 +15,7 @@ Android Studio (Kotlin)
 
    メールアドレス(Gmailのみ)とパスワード(6文字以上)を入力して、「新規登録」ボタンを押します。これでアカウントが作成されます。<br>
    次に以下のような画面へ遷移します。<br><br>
-   <img src="https://user-images.githubusercontent.com/89324742/147649506-97d714de-9941-4c0c-9db7-4eb7748e4b85.png"
+   <img src="https://user-images.githubusercontent.com/89324742/147649590-ce280be2-1cee-4c80-b38a-7a73ab909dde.png"
         width="400px"><br><br>
 「何で？」のところに「何を我慢して節約したか」、「何円節約」のところに「具体的な金額」を入力して「確定」ボタンを押します。すると、<br><br>
 <img src = "https://user-images.githubusercontent.com/89324742/140570242-162dc5d9-4cc8-4ec1-a6dc-10acd3934801.png"
