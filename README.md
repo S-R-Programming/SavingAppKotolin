@@ -43,4 +43,4 @@ Android Studio (Kotlin)
 <br>Qiitaで記事を書いているので、お時間あればこちらもご覧ください。https://qiita.com/S-R-Programming
 
 ## 余談
-KotlinでAPI連携をやる予定です。
+プロジェクト名の「Kotlin」を「Kotolin」としてしまいました。恥ずかしい。
