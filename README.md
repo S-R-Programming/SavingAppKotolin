@@ -15,11 +15,13 @@ Android Studio (Kotlin)
 
    メールアドレス(Gmailのみ)とパスワード(6文字以上)を入力して、「新規登録」ボタンを押します。これでアカウントが作成されます。<br>
    次に以下のような画面へ遷移します。<br><br>
+   <img src = "https://user-images.githubusercontent.com/89324742/147649693-e96471d7-a587-4002-b37f-f3ac1ecb862e.png"
+     width="400px"><br><br>
+
+「何で？」のところに「何を我慢して節約したか」、「何円節約」のところに「具体的な金額」を入力して「確定」ボタンを押します。すると、<br><br>
    <img src="https://user-images.githubusercontent.com/89324742/147649590-ce280be2-1cee-4c80-b38a-7a73ab909dde.png"
         width="400px"><br><br>
-「何で？」のところに「何を我慢して節約したか」、「何円節約」のところに「具体的な金額」を入力して「確定」ボタンを押します。すると、<br><br>
-<img src = "https://user-images.githubusercontent.com/89324742/140570242-162dc5d9-4cc8-4ec1-a6dc-10acd3934801.png"
-     width="400px"><br><br>
+
 このようにリストで記録されます。このリストを押すと、Tweetの画面へ移り、我慢した内容をTweet出来ます。<br><br>
 <img src = "https://user-images.githubusercontent.com/89324742/140570642-f76bbe5d-0281-41c6-be3b-6c4bc54a499c.png"
      width="400px"><br><br>
