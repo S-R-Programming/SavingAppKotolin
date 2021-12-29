@@ -10,6 +10,8 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.ArrayList
@@ -25,6 +27,11 @@ class ResumeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resume_main)
+        database = Firebase.database.reference
+        email = "shiomotoandprogramming@gmail"
+        what_edit = findViewById<EditText>(R.id.what)
+        listview=findViewById<ListView>(R.id.listview)
+        price_edit = findViewById<EditText>(R.id.price)
         setup()
     }
 
@@ -57,7 +64,7 @@ class ResumeActivity : AppCompatActivity() {
                 for (snapshot in dataSnapshot.children) { //detailの中身を全てget
                     var key = snapshot.key
                     var price_int=snapshot.getValue()
-                    resumeList.add(key + price_int+"円")
+                    resumeList.add(key +" "+price_int+"円")
                     //  sb.append(key+"円");
                     //sb.append("\n");
                 }

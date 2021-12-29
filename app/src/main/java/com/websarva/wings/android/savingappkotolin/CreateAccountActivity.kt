@@ -1,5 +1,6 @@
 package com.websarva.wings.android.savingappkotolin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -47,11 +48,15 @@ class CreateAccountActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
-                    Toast.makeText(baseContext, "Authentication success.",
+                    Toast.makeText(baseContext, "アカウントを作成しました",
                         Toast.LENGTH_SHORT).show()
                         //sendMailの実装もしたい
                     updateUI(user)
                     //履歴画面へ
+                    intent = Intent(this@CreateAccountActivity,ResumeActivity::class.java)
+                    intent.putExtra("email",email)
+                    intent.putExtra("password",password)
+                    startActivity(intent)
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "createUserWithEmail:failure", task.exception)
